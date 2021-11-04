@@ -1,4 +1,4 @@
-function [] = audio_process(x)
+function [data] = audio_process(x)
     FS = 16000;
     WINDOW = 0.02;
     FRAME_LENGTH = FS * WINDOW;
@@ -11,7 +11,7 @@ function [] = audio_process(x)
        shortFrame = x(first_sample:last_sample);
        [magSpec, ~] = magAndPhase(shortFrame);
        featureVector = linearRectangularFilterbank(magSpec, N);
+       data(i,:) = featureVector;
     end
-    
     
 end

@@ -9,7 +9,7 @@ function [featureVector] = linearRectangularFilterbank(magSpec, N)
             featureVector(j) = sum(magSpec(first:last));
         end
     end
-    keyboard;
+    %keyboard;
     featureVector = log(featureVector);
     featureVector = dct(featureVector);
     %featureVector = featureVector(1:floor(N/2))
