@@ -1,0 +1,10 @@
+MFCCs/test/testsample01.mfc
+MFCCs/test/testsample02.mfc
+MFCCs/test/testsample03.mfc
+MFCCs/test/testsample04.mfc
+MFCCs/test/testsample05.mfc
+MFCCs/test/testsample06.mfc
+MFCCs/test/testsample07.mfc
+MFCCs/test/testsample08.mfc
+MFCCs/test/testsample09.mfc
+MFCCs/test/testsample10.mfc
