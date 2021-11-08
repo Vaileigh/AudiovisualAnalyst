@@ -1,14 +1,17 @@
-function [] = audio_read ()
-    for i = 1 : 20
+function [vectorSize] = audio_read (fileLoc, fileName, targetLoc, N)
+%vectorSize = audio_read("speechTest", "testsample", "mfccsTest", 10);
+%vectorSize = audio_read("speech", "speech", "mfccsTrain", 20);
+    vectorSize = 10;
+    for i = 1 : N
         if i < 10
-            speech(i, :) = "speech0"+i;
+            speech(i, :) = fileName+"0"+i;
         else
-            speech(i, :) = "speech"+i;
+            speech(i, :) = fileName+i;
         end
     end
-    for i = 1 : 20
-        [x, FS] = audioread("speech/"+speech(i)+".wav");
-        data = audio_process (x);
-        writeHTK(data, speech(i));
+    for i = 1 : N
+        [x, FS] = audioread(fileLoc+"/"+speech(i)+".wav");
+        data = audio_process (x, vectorSize);
+        writeHTK(data, speech(i), targetLoc);
     end
 end

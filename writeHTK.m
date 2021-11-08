@@ -1,5 +1,5 @@
-function [data] = writeHTK (data, fileout)
-    filename = "mfccsTrain\" + fileout + ".mfc";
+function [data] = writeHTK (data, fileout, targetLoc)
+    filename = targetLoc+"\" + fileout + ".mfc";
     numVectors = length(data);
     vectorPeriod = 200000;
     numDims = length(data(1,:));

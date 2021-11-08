@@ -1,4 +1,4 @@
-function writeProtoFile(fileName, NumStates, VectorSize)
+function writeProto(fileName, NumStates, VectorSize)
     % Creates an HTK prototype file to model a HMM.
     % Inputs:
     % fileName - intended file to be written to.
