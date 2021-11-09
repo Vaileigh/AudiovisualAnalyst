@@ -8,3 +8,13 @@ MFCCs/test/testsample07.mfc
 MFCCs/test/testsample08.mfc
 MFCCs/test/testsample09.mfc
 MFCCs/test/testsample10.mfc
+MFCCs/test/testsample11.mfc
+MFCCs/test/testsample12.mfc
+MFCCs/test/testsample13.mfc
+MFCCs/test/testsample14.mfc
+MFCCs/test/testsample15.mfc
+MFCCs/test/testsample16.mfc
+MFCCs/test/testsample17.mfc
+MFCCs/test/testsample18.mfc
+MFCCs/test/testsample19.mfc
+MFCCs/test/testsample20.mfc
